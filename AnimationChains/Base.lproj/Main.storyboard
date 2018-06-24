@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnimationChains" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="filip-gielda-94858" translatesAutoresizingMaskIntoConstraints="NO" id="6Hv-Zq-TvC">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mdn-gf-Iph">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TASTE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="twf-zl-Bog">
+                                        <rect key="frame" x="143.5" y="100" width="88" height="41"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Food Your Rating" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y17-2R-bKT">
+                                        <rect key="frame" x="98" y="171" width="179" height="82"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="179" id="ErK-nC-kDH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fsR-kP-0OQ" customClass="DesignableUIButton" customModule="AnimationChains" customModuleProvider="target">
+                                        <rect key="frame" x="162.5" y="517" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="4JJ-P8-MGK"/>
+                                            <constraint firstAttribute="height" constant="50" id="DCA-CH-r04"/>
+                                        </constraints>
+                                        <state key="normal" image="send"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadious">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="bordercolor">
+                                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderwidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="goButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ffo-kI-QhN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.28172588832487311" green="0.28172588832487311" blue="0.28172588832487311" alpha="0.65087221746575341" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="fsR-kP-0OQ" secondAttribute="bottom" constant="100" id="5SA-E5-Wrd"/>
+                                    <constraint firstItem="fsR-kP-0OQ" firstAttribute="centerX" secondItem="mdn-gf-Iph" secondAttribute="centerX" id="OIv-nS-oSH"/>
+                                    <constraint firstItem="Y17-2R-bKT" firstAttribute="top" secondItem="twf-zl-Bog" secondAttribute="bottom" constant="30" id="Pnr-UB-Txc"/>
+                                    <constraint firstItem="twf-zl-Bog" firstAttribute="centerX" secondItem="mdn-gf-Iph" secondAttribute="centerX" id="a8V-Um-BP7"/>
+                                    <constraint firstItem="twf-zl-Bog" firstAttribute="top" secondItem="mdn-gf-Iph" secondAttribute="top" constant="100" id="ivd-ZD-V14"/>
+                                    <constraint firstItem="Y17-2R-bKT" firstAttribute="centerX" secondItem="mdn-gf-Iph" secondAttribute="centerX" id="m73-8b-qZ0"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6Hv-Zq-TvC" secondAttribute="trailing" id="3UF-wY-s2K"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mdn-gf-Iph" secondAttribute="trailing" id="3gB-rO-zYs"/>
+                            <constraint firstItem="mdn-gf-Iph" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="5R4-O4-hE9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mdn-gf-Iph" secondAttribute="bottom" id="Rh8-Su-nux"/>
+                            <constraint firstItem="6Hv-Zq-TvC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="XLA-9T-PPT"/>
+                            <constraint firstItem="mdn-gf-Iph" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aJ0-bh-dMG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6Hv-Zq-TvC" secondAttribute="bottom" id="dem-2D-O6Z"/>
+                            <constraint firstItem="6Hv-Zq-TvC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fC9-kd-Xji"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="bgImage" destination="6Hv-Zq-TvC" id="mfc-Xq-vRR"/>
+                        <outlet property="descriptionLabel" destination="Y17-2R-bKT" id="wPl-zQ-QLp"/>
+                        <outlet property="goButton" destination="fsR-kP-0OQ" id="p5f-Le-0Nk"/>
+                        <outlet property="titleLabel" destination="twf-zl-Bog" id="hRT-Gi-kso"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="filip-gielda-94858" width="4096" height="2730"/>
+        <image name="send" width="32" height="32"/>
+    </resources>
+</document>
